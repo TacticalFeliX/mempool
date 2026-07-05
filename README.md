@@ -17,11 +17,7 @@ This project implements an **intrusive free list** trick: when a memory block is
 
 ---
 
-## 🛠️ Architecture Overview
-
-The allocator partitions a single flat byte array (`pool->storage[]`) into `POOL_BLOCK_COUNT` fixed-size slots, each containing `POOL_BLOCK_SIZE` bytes.
-
-💻 Quick Start & Usage
+## 💻 Quick Start & Usage
 Building the Demo
 To compile the test driver, run:
 
@@ -29,10 +25,11 @@ To compile the test driver, run:
 gcc -Wall -Wextra -std=c11 -o mempool_demo main.c mempool.c
 ```
 
-📊 Sample Metrics Report
+---
+
+## 📊 Sample Metrics Report
 Calling pool_print_stats() renders an ASCII visualizer summarizing lifetime and active telemetry:
 
-Plaintext
 ┌──────────────────────────────────────────┐
 │          MemPool Status Report           │
 ├──────────────────────────────────────────┤
@@ -43,3 +40,5 @@ Plaintext
 │  Total allocs :    4 (lifetime)          │
 │  Total frees  :    1 (lifetime)          │
 └──────────────────────────────────────────┘
+
+---
