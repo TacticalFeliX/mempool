@@ -24,21 +24,4 @@ To compile the test driver, run:
 ```bash
 gcc -Wall -Wextra -std=c11 -o mempool_demo main.c mempool.c
 ```
-
----
-
-## 📊 Sample Metrics Report
-Calling pool_print_stats() renders an ASCII visualizer summarizing lifetime and active telemetry:
-
-┌──────────────────────────────────────────┐
-│          MemPool Status Report           │
-├──────────────────────────────────────────┤
-│  Block size   :   64 bytes               │
-│  Total blocks :   16                     │
-│  In use       :    3                     │
-│  Free         :   13                     │
-│  Total allocs :    4 (lifetime)          │
-│  Total frees  :    1 (lifetime)          │
-└──────────────────────────────────────────┘
-
 ---
